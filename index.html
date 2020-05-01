@@ -1,9 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- <title>I Wish I knew How</title> -->
-<!-- <link rel="stylesheet" type="text/css" href="/Users/elenaorlova/Documents/GitHub/interactivebanner/style.css"> -->
-<link rel="stylesheet" type="text/css" href="/Users/elenaorlova/Documents/GitHub/interactivebanner/style.css">
+<style type="text/css">
+	
+	@import url(https://www.fonts.com/font/urw-type-foundry/franklin-gothic/heavy);
+
+$background: linear-gradient(to bottom, #e0d0b7 0%,#e0d0b7 100%);
+$black: #000000;
+$blue: #195e99;
+$shadow: #b13414;
+$shadow2: #d39204;
+
+html{
+  height: 100%;
+}
+
+body{
+  font-family: 'Franklin Gothic';
+  font-style: bold;
+  background: $background;
+}
+
+.container{
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: block;
+  max-width: 400px;
+}
+
+.button{
+  float: left;
+  position: relative;
+  bottom: -65px;
+  left: 50%;
+  color: $black;
+  text-transform: uppercase;
+  opacity: 0;
+  font-style: bold;
+  visibility: hidden;
+  cursor: pointer;
+  background: transparent;
+  padding: 4px;
+  border-style: solid;
+  border-radius: 1.6rem;
+  span{
+    display: block;
+    float: left;
+    font-style: bold;
+    word-spacing: 20px;
+  }
+}
+
+h1{
+  color: #fff;
+  font-size: 42px;
+  margin: 2px;
+  letter-spacing: 3px;
+  font-kerning: normal;
+}
+
+.title{
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+  word-spacing: 20px
+  
+  span {
+    display: block;
+    float: left;
+    word-spacing: 20px;
+  }
+}
+
+.title{
+  &:nth-child(1){
+    color: $blue;
+  }
+  &:nth-child(2){
+    color: $black;
+    text-decoration: line-through;
+  }
+    color: $blue;
+  }
+  &:nth-child(4){
+    color: $black;
+  }
+  &:nth-child(5){
+    color: $blue;
+    min-width: 10px;
+    min-height: 10px;
+    position: relative;
+  }
+}
+
+</style>
 </head>
 <body>
 <section class="container">
